@@ -1,4 +1,4 @@
-package Assignments;
+
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -15,6 +15,7 @@ public class BookmyShow {
 	public static void main(String[] args) {
 		
 		WebDriver driver = new FirefoxDriver();
+		System.setProperty("WebDriver.geckoDriver", "C:\\Users\\avips\\Desktop\\Repo\\SeleniumExamples\\src");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://in.bookmyshow.com/");
 		WebDriverWait wait = new WebDriverWait(driver, 30);
